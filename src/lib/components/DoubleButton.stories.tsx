@@ -3,25 +3,21 @@ import React, { ComponentProps } from "react";
 import { Story, Meta } from "@storybook/react";
 
 import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
-
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/Inbox";
 import DraftsIcon from "@material-ui/icons/Drafts";
+import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
 
-import DylcButton from "./DylcButton";
+import DoubleButton from "./DoubleButton";
 
 //👇 This default export determines where your story goes in the story list
 export default {
   title: "Components/Button",
-  component: DylcButton,
+  component: DoubleButton,
 } as Meta;
 
 //👇 We create a “template” of how args map to rendering
-const Template: Story<ComponentProps<typeof DylcButton>> = (args) => (
-  <DylcButton {...args} />
+const Template: Story<ComponentProps<typeof DoubleButton>> = (args) => (
+  <DoubleButton {...args} />
 );
 
 export const Default = Template.bind({});
@@ -72,12 +68,12 @@ CustomTitleIcon.args = {
 };
 
 //👇 We create a “template” of how args map to rendering
-const TemplateWithChildren: Story<ComponentProps<typeof DylcButton>> = (
+const TemplateWithChildren: Story<ComponentProps<typeof DoubleButton>> = (
   args
 ) => (
-  <DylcButton {...args}>
-    <h3 style={{ margin: 8 }}> Hello there </h3>
-  </DylcButton>
+  <DoubleButton {...args}>
+    <p style={{ margin: 8 }}> Hello there </p>
+  </DoubleButton>
 );
 
 export const DefaultWithSimplePopper = TemplateWithChildren.bind({});
@@ -86,10 +82,10 @@ DefaultWithSimplePopper.args = {
   ...PrimaryOutlined.args,
 };
 //👇 We create a “template” of how args map to rendering
-const TemplateWithListChildren: Story<ComponentProps<typeof DylcButton>> = (
+const TemplateWithListChildren: Story<ComponentProps<typeof DoubleButton>> = (
   args
 ) => (
-  <DylcButton {...args}>
+  <DoubleButton {...args}>
     <List component="nav" aria-label="main mailbox folders">
       <ListItem button>
         <ListItemIcon>
@@ -104,7 +100,7 @@ const TemplateWithListChildren: Story<ComponentProps<typeof DylcButton>> = (
         <ListItemText primary="Drafts" />
       </ListItem>
     </List>
-  </DylcButton>
+  </DoubleButton>
 );
 
 export const DefaultWithListPopper = TemplateWithListChildren.bind({});

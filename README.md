@@ -1,10 +1,23 @@
 # UI-React-Elements
 
-## DylcButton
+**Table of Contents**
 
+- [Examples](#-examples--https---dylcgithubio-ui-react-elements--)
+- [List of UI elements](#list-of-ui-elements)
+  - [DoubleButton](#doublebutton)
+    - [Config](#config)
+
+## [Examples](https://dylc.github.io/ui-react-elements/)
+
+## List of UI elements
+
+### DoubleButton
+
+[Example](https://dylc.github.io/ui-react-elements/?path=/story/components-button--default)
 The button that consist of 2 parts - one is regular button and another one (default is icon buttpon with drop down arrow)
+Any of the buttons are accept all values from material
 
-### Config
+#### Config
 
 | Value                               | Type                    | Description                                                                      | Example                                         | More                                                          |
 | ----------------------------------- | ----------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------- |

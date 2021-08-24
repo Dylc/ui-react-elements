@@ -1,3 +1,3 @@
-import DylcButton from "./components/DylcButton";
+import DoubleButton from "./components/DoubleButton";
 
-export default DylcButton;
+export default DoubleButton;

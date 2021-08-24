@@ -17,7 +17,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   root: {
-    borderRadius: (props: IDylcButton) => props.borderRadius,
+    borderRadius: (props: IDoubleButton) => props.borderRadius,
   },
   secButRoot: {
     paddingLeft: 4,
@@ -30,7 +30,7 @@ const useStyles = makeStyles({
   },
 });
 
-interface IDylcButton {
+interface IDoubleButton {
   mainButtonTitle: string;
   mainButtonOnClickHandler?: () => void;
   secButtonOnClickHandler?: () => void;
@@ -45,7 +45,7 @@ interface IDylcButton {
   secButtonTitle?: string | React.ReactElement<SvgIconProps>;
 }
 
-const DylcButton = (props: IDylcButton) => {
+const DoubleButton = (props: IDoubleButton) => {
   const classes = useStyles(props);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
@@ -72,6 +72,7 @@ const DylcButton = (props: IDylcButton) => {
   return (
     <div>
       <ButtonGroup classes={{ root: classes.root }} {...buttonGroupProps}>
+        {/* MAIN BUTTON */}
         <Button
           classes={{ root: classes.root }}
           onClick={mainButtonOnClickHandler}
@@ -79,6 +80,8 @@ const DylcButton = (props: IDylcButton) => {
         >
           {mainButtonTitle}
         </Button>
+
+        {/* SECONDARY BUTTON */}
         <Button
           classes={{
             root: `${classes.root} ${
@@ -95,6 +98,8 @@ const DylcButton = (props: IDylcButton) => {
           {secButtonTitle || <ArrowDropDownIcon />}
         </Button>
       </ButtonGroup>
+
+      {/* Popper that is displayed on sec. but. click */}
       <Popper open={open} anchorEl={anchorEl} transition {...popperProps}>
         {({ TransitionProps }) => (
           <Fade {...TransitionProps} timeout={350} {...fadeProps}>
@@ -108,4 +113,4 @@ const DylcButton = (props: IDylcButton) => {
   );
 };
 
-export default DylcButton;
+export default DoubleButton;
