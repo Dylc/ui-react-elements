@@ -13,7 +13,7 @@
 
 ### DoubleButton
 
-[Example](https://dylc.github.io/ui-react-elements/?path=/story/components-button--default)
+Example - [link](https://dylc.github.io/ui-react-elements/?path=/story/components-button--default)
 
 The button that consist of 2 parts - one is regular button and another one (default is icon buttpon with drop down arrow)
 Any of the buttons are accept all values from material
