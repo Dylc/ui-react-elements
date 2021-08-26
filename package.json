@@ -1,6 +1,6 @@
 {
   "name": "@dylc/dylc-ui",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "private": false,
   "keywords": [
     "react",
@@ -76,7 +76,6 @@
     "@babel/preset-env": "^7.15.0",
     "@storybook/addon-actions": "^6.3.7",
     "@storybook/addon-essentials": "^6.3.7",
-    "@storybook/addon-knobs": "^6.3.0",
     "@storybook/addon-links": "^6.3.7",
     "@storybook/addon-storysource": "^6.3.7",
     "@storybook/node-logger": "^6.3.7",
