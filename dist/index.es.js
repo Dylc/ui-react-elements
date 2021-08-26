@@ -66,4 +66,4 @@ var DoubleButton = function (props) {
                 } }), void 0)] }, void 0));
 };
 
-export { DoubleButton as default };
+export { DoubleButton };

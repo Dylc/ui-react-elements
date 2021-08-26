@@ -6,6 +6,7 @@
 - [List of UI elements](#list-of-ui-elements)
   - [DoubleButton](#doublebutton)
     - [Config](#config)
+    - [Examples of usage](#Examples of usage)
 
 ## [Examples](https://dylc.github.io/ui-react-elements/)
 
@@ -35,7 +36,7 @@ Any of the buttons are accept all values from material
 | paperProps            | V | PaperProps              | props from material Paper                                                        | `paperProps={{}}`                               | [Paper API](https://material-ui.com/api/paper/)               |
 | secButtonTitle          | V | string or material-icon | Can be string or any icon. Default is drop down arrow icon                       | `buttonGroupProps={{}}`                         |                                                               |
 
-#### Usage
+#### Examples of usage
 
 Import 
 ```javascript
