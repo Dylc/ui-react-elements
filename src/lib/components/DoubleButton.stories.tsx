@@ -11,7 +11,7 @@ import DoubleButton from "./DoubleButton";
 
 //👇 This default export determines where your story goes in the story list
 export default {
-  title: "Components/Button",
+  title: "Components/DoubleButton",
   component: DoubleButton,
 } as Meta;
 
