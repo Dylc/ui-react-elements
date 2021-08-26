@@ -1,3 +1,3 @@
 import DoubleButton from "./components/DoubleButton";
 
-export default DoubleButton;
+export { DoubleButton } ;
