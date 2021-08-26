@@ -4,17 +4,59 @@
 
 - [Examples](#-examples--https---dylcgithubio-ui-react-elements--)
 - [List of UI elements](#list-of-ui-elements)
-  - [DoubleButton](#doublebutton)
-    - [Config](#config)
-    - [Usage](#usage)
+  * [Button](#button)
+    + [Config](#config)
+    + [Usage](#usage)
+  * [DoubleButton](#doublebutton)
+    + [Config](#config-1)
+    + [Usage](#usage-1)
 
+___
 ## [Examples](https://dylc.github.io/ui-react-elements/)
-
+___
 ## List of UI elements
+
+### Button
+
+[Examples](https://dylc.github.io/ui-react-elements/?path=/story/components-button--default-without-border)
+
+Simple button with nice onHover effect
+
+#### Config
+
+
+| Value       | Optional                       | Type                    | Description                                                                      | Example                                         | More                                                          |
+| ----------------------------------- | -- |----------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------- |
+| title  | -                  | string                  | title of the button                                                         | `titel="Click me"`                    |                                                               |
+| border  | V                  | boolean or border as css                  | border, if none - use don't use. just border will use default                                                         | `border`, `border="0.5px solid #D5DFE9!important"`
+
+#### Usage
+
+Import 
+```javascript
+  import { Button } from '@dylc/dylc-ui';
+```
+
+1. Minimnal Configuration
+```javascript
+  <Button title="Click me" />
+```
+
+2. Minimnal Configuration with border
+```javascript
+  <Button title="Click me" border />
+```
+
+3. Minimnal Configuration with custom border
+```javascript
+  <Button title="Click me" border="0.5px solid #D5DFE9!important" />
+```
+
+___
 
 ### DoubleButton
 
-[Examples](https://dylc.github.io/ui-react-elements/?path=/story/components-button--default)
+[Examples](https://dylc.github.io/ui-react-elements/?path=/story/components-doublebutton--default)
 
 The button that consist of 2 parts - one is regular button and another one (default is icon buttpon with drop down arrow)
 Any of the buttons are accept all values from material
@@ -89,3 +131,5 @@ Import
     <h4> See me on secondary button click </h4>
   </DoubleButton> 
 ```
+
+___
