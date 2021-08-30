@@ -1,9 +1,11 @@
 import Button from "./components/Button";
 import DoubleButton from "./components/DoubleButton";
+import Switch from "./components/Switch";
 
 export default {
     Button, 
-    DoubleButton
+    DoubleButton,
+    Switch
 }
 
-export { Button, DoubleButton } ;
+export { Button, DoubleButton, Switch } ;
