@@ -10,6 +10,9 @@
   * [DoubleButton](#doublebutton)
     + [Config](#config-1)
     + [Usage](#usage-1)
+  * [Switch](#switch)
+    + [Config](#config-2)
+    + [Usage](#usage-2)
 
 ___
 ## [Examples](https://dylc.github.io/ui-react-elements/)
@@ -130,6 +133,83 @@ Import
   > 
     <h4> See me on secondary button click </h4>
   </DoubleButton> 
+```
+
+___
+
+
+### Switch
+
+[Examples](https://dylc.github.io/ui-react-elements/?path=/story/components-switch--default)
+
+Switch/Toggle with multiply choices 
+
+#### Config
+
+
+| Value       | Optional                       | Type                    | Description                                                                      | Example                                         | More                                                          |
+| ----------------------------------- | -- |----------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------- |
+| items  | -                  | `[{label: string, handler: any}]`                  | Array of Items where every item is an object with label and handler (the latest is a function). The can be more than 2 items                                                         | ``` items: [{label: 'Start',handler: () => {console.log('Start')}},{label: 'End', handler: () => {console.log('End')}}]```                   |                                                               |
+| selected  | V                  | number                  | default selected value (from 0) - the default is 0                                                         | `selected: 1`
+
+#### Usage
+
+Import 
+```javascript
+  import { Switch } from '@dylc/dylc-ui';
+```
+
+1. Minimnal Configuration
+```javascript
+  <Swicth 
+    items={[
+      {
+        label: 'Start',
+        handler: () => {console.log('Start')}
+      },
+      {
+        label: 'End',
+        handler: () => {console.log('End')}
+      }
+    ]} 
+  />
+```
+
+2. Minimnal Configuration for 3
+```javascript
+  <Swicth 
+    items={[
+      {
+        label: 'First',
+        handler: () => {console.log('First')}
+      },
+      {
+        label: 'Second',
+        handler: () => {console.log('Second')}
+      },
+      {
+        label: 'Third',
+        handler: () => {console.log('Third')}
+      }
+    ]} 
+  />
+```
+
+3. Minimnal Configuration with default selected 1
+```javascript
+  <Swicth 
+    items={[
+      {
+        label: 'Start',
+        handler: () => {console.log('Start')}
+      },
+      {
+        label: 'End',
+        handler: () => {console.log('End')}
+      }
+    ]}
+    selected={1} 
+  />
 ```
 
 ___
